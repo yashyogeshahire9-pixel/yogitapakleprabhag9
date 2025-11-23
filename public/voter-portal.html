@@ -252,14 +252,30 @@
 <div class="container">
   <!-- HEADER -->
   <div class="header">
-    <style>
-    .logo-img {
-        margin: 0 05px; /* Equal left & right spacing */
+<style>
+    .image-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .logo-img-watch {
+        width: 80px;   /* Small watch */
+        height: auto;
+    }
+
+    .logo-img-maharaj {
+        width: 150px;  /* Big Maharaj image */
+        height: auto;
     }
 </style>
 
-<img src="/mahraj.jpeg" alt="Yashwantrao Chavan" class="logo-img">
-<img src="/watch.png" alt="Watch" class="logo-img">
+<div class="image-container">
+    <img src="/watch.png" alt="Watch" class="logo-img-watch">
+    <img src="/mahraj.jpeg" alt="Yashwantrao Chavan" class="logo-img-maharaj">
+    <img src="/watch.png" alt="Watch" class="logo-img-watch">
+</div>
 
     <h1>सटाणा नगरपालिका निवडणूक 2025</h1>
     <div class="subtitle"><b>By : यश कॉम्प्युटर्स (Coding & MS-CIT Classes)</b></div>
