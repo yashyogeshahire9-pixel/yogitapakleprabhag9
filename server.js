@@ -137,7 +137,7 @@ app.get('/search', (req, res) => {
       const searchIn = `${v.englishName} ${v.marathiName} ${v.polling}`.toLowerCase();
       return searchIn.includes(q);
     })
-    .slice(0, 20) // limit results
+    //.slice(0, 20) // limit results
     .map(v => ({
       serial: v.serial,
       marathiName: v.marathiName,
@@ -175,4 +175,5 @@ app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
   console.log(`Public search: http://localhost:${PORT}/search?q=ram`);
   console.log(`Total voters loaded: ${voterData.length} (ready: ${ready})`);
+
 });
